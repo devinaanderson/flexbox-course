@@ -5,12 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin: 0;
+            height: calc(100vh - 20px);
+            width: calc(100vh - 20px);
+            border: 10px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .image-blocks {
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+    </style>
+
 </head>
 <body>
-    <h1>Hi Flexbox</h1>
+    <div class="container">
+        <div class="image-blocks">
+            <img src="https://source.unsplash.com/random/150x150" alt="">
+            <img src="https://source.unsplash.com/random/150x150" alt="">
+            <img src="https://source.unsplash.com/random/150x150" alt="">
+        </div>
+    </div>
 
-    <p>some content here</p>
-
-    <p>more content</p>
 </body>
 </html>
